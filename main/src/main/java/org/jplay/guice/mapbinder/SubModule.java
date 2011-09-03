@@ -1,12 +1,12 @@
-package org.jplay.guice;
+package org.jplay.guice.mapbinder;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.multibindings.MapBinder;
 
-public class MainModule extends AbstractModule {
+public class SubModule extends AbstractModule {
     @Override
     protected void configure() {
         MapBinder.newMapBinder(binder(), String.class, String.class)
-            .addBinding("Adam").toInstance("Eve");
+            .addBinding("Kane").toInstance("Abel");
     }
 }

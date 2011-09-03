@@ -1,4 +1,4 @@
-package org.jplay.guice;
+package org.jplay.guice.mapbinder;
 
 import com.google.inject.Inject;
 
